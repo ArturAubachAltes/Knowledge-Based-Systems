@@ -1,0 +1,649 @@
+         CLIPS (6.4.1 4/8/23)
+CLIPS> +#######@!!!!***+**+!!!!!!!*+**********+!!**+**+***+****+*****+********!*+**+!***
+TRUE
+CLIPS> @@
+TRUE
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+A quin grup d'edat pertanys? 
+    Si tens entre 4 i 6 anys tria l'opcio 'baby'
+    Si tens entre 7 i 14 anys tria l'opcio 'children'
+    Si tens entre 15 i 18 anys tria l'opcio 'teenager'
+    Si tens mes de 18 anys tria l'opcio 'adult'
+
+>>> 
+Perfecte! Anem a per la proxima pregunta:
+
+Tens habit de lectura? Es a dir, acostumes a llegir en els teus temps lliures, quan vas de viatge... de manera coninuada?
+    Respon 'Yes' o 'No'.
+
+>>> 
+Segur que el llibres que et recomanem t'enganxaran a la lectura!
+Eliminarem els llibres de la llista que no son de la teva edat.
+Abans de la poda hi ha 932 instancies de llibres.
+Despres de la poda han quedat 30 instancies de llibres.
+Ara anem amb preguntes una mica mes especifiques:
+
+De quina tematica t'agradaria que fos el llibre? 
+    Si t'agradaria que el teu llibre fos relacionat amb els esports tria l'opcio 'Sports'
+    Si t'agradaria que el teu llibre fos relacionat amb les cancons i la musica tria l'opcio 'Music'
+    Si t'agradaria que el teu llibre expliques histories emocionants tria l'opcio 'Adventures'
+    Si t'agradaria que el teu llibre fos relacionat amb com es el mon tria l'opcio 'Culture'
+    Si t'agradaria que el teu llibre fos relacionat amb la magia tria l'opcio 'Magic'
+    Si t'agradaria que el teu llibre expliques fets del dia a dia tria l'opcio 'Daily_life'
+
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Tema assignat correctament, tens molt bon gust!
+
+Quina es la finalitat d'aquest llibre? 
+    Si vols el llibre per aprendre sobre qualsevol tematica tria l'opcio 'Learning'
+    Si vols el llibre per passar una bona estona tria l'opcio 'Entretainment'
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Tindrem en compte la finalitat que busques!
+
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Dia de Parque y Juegos | Puntuacio: 48.8245373214083
+Segur que amb aquest llibre passes una bona estona entretenint-te amb la lectura!
+Amb aquest llibre, els petits llegiran sobre emocionants viatges i desafiaments, ideal per als nens amb un esperit aventurer com el teu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Paseo en Trenecito Encantado | Puntuacio: 46.9928922104472
+Segur que amb aquest llibre passes una bona estona entretenint-te amb la lectura!
+Amb aquest llibre, els petits llegiran sobre emocionants viatges i desafiaments, ideal per als nens amb un esperit aventurer com el teu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Vuelo en Globo de Colores | Puntuacio: 43.9224754078572
+Segur que amb aquest llibre passes una bona estona entretenint-te amb la lectura!
+Amb aquest llibre, els petits llegiran sobre emocionants viatges i desafiaments, ideal per als nens amb un esperit aventurer com el teu.
+
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+A quin grup d'edat pertanys? 
+    Si tens entre 4 i 6 anys tria l'opcio 'baby'
+    Si tens entre 7 i 14 anys tria l'opcio 'children'
+    Si tens entre 15 i 18 anys tria l'opcio 'teenager'
+    Si tens mes de 18 anys tria l'opcio 'adult'
+
+>>> 
+Perfecte! Anem a per la proxima pregunta:
+
+Tens habit de lectura? Es a dir, acostumes a llegir en els teus temps lliures, quan vas de viatge... de manera coninuada?
+    Respon 'Yes' o 'No'.
+
+>>> 
+Segur que el llibres que et recomanem t'enganxaran a la lectura!
+Eliminarem els llibres de la llista que no son de la teva edat.
+Abans de la poda hi ha 932 instancies de llibres.
+Despres de la poda han quedat 60 instancies de llibres.
+Ara anem amb preguntes una mica mes especifiques:
+
+Quines son les teves aficions? 
+    Si t'agrada l'esport i les activitats fisiques, selecciona 'Sports'.
+    Si ets un amant de la musica i els concerts, selecciona 'Music'.
+    Si prefereixes les histories sobre la vida quotidiana, selecciona 'Daily_life'.
+    Si t'agrada explorar i viure aventures, selecciona 'Adventures'.
+    Si t'estimes la cultura i l'art, selecciona 'Culture'.
+    Si t'agrada la magia i el mon del fantastic, selecciona 'Magic'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Molt bon tema! Tenim llibres molt interessants d'aquesta categoria
+
+Busques un llibre amb illustracions?
+    Respon 'Yes' si desitges un llibre amb illustracions, o 'No' si prefereixes un llibre sense illustracions.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Llibres sense ilustracions! Es nota que comences a ferte gran...
+
+
+Quant temps tens per llegir? 
+    Si disposes de poc temps i desitges llibres curts, selecciona 'short'.
+    Si tens bastant temps per llegir, selecciona 'medium'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Perfecte!
+
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Travesia de la Montana Saltarina | Puntuacio: 36.9073792830405
+Hem trobat un llibre de tapa dura tal i com volies.
+Amb aquest llibre, els petits llegiran sobre emocionants viatges i desafiaments, ideal per als nens amb un esperit aventurer com el teu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Aventura en la Ciudad de Dulces | Puntuacio: 31.3064103104802
+Hem trobat un llibre de tapa dura tal i com volies.
+Amb aquest llibre, els petits llegiran sobre emocionants viatges i desafiaments, ideal per als nens amb un esperit aventurer com el teu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Expedicion al Reino Escondido | Puntuacio: 29.9884785482216
+Hem trobat un llibre de tapa dura tal i com volies.
+Amb aquest llibre, els petits llegiran sobre emocionants viatges i desafiaments, ideal per als nens amb un esperit aventurer com el teu.
+
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+A quin grup d'edat pertanys? 
+    Si tens entre 4 i 6 anys tria l'opcio 'baby'
+    Si tens entre 7 i 14 anys tria l'opcio 'children'
+    Si tens entre 15 i 18 anys tria l'opcio 'teenager'
+    Si tens mes de 18 anys tria l'opcio 'adult'
+
+>>> 
+Perfecte! Anem a per la proxima pregunta:
+
+Tens habit de lectura? Es a dir, acostumes a llegir en els teus temps lliures, quan vas de viatge... de manera coninuada?
+    Respon 'Yes' o 'No'.
+
+>>> 
+Segur que el llibres que et recomanem t'enganxaran a la lectura!
+Eliminarem els llibres de la llista que no son de la teva edat.
+Abans de la poda hi ha 932 instancies de llibres.
+Despres de la poda han quedat 60 instancies de llibres.
+Ara anem amb preguntes una mica mes especifiques:
+
+Quines son les teves aficions? 
+    Si t'agrada l'esport i les activitats fisiques, selecciona 'Sports'.
+    Si ets un amant de la musica i els concerts, selecciona 'Music'.
+    Si prefereixes les histories sobre la vida quotidiana, selecciona 'Daily_life'.
+    Si t'agrada explorar i viure aventures, selecciona 'Adventures'.
+    Si t'estimes la cultura i l'art, selecciona 'Culture'.
+    Si t'agrada la magia i el mon del fantastic, selecciona 'Magic'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Molt bon tema! Tenim llibres molt interessants d'aquesta categoria
+
+Busques un llibre amb illustracions?
+    Respon 'Yes' si desitges un llibre amb illustracions, o 'No' si prefereixes un llibre sense illustracions.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Llibres sense ilustracions! Es nota que comences a ferte gran...
+
+
+Quant temps tens per llegir? 
+    Si disposes de poc temps i desitges llibres curts, selecciona 'short'.
+    Si tens bastant temps per llegir, selecciona 'medium'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Perfecte!
+
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Natacion en la Laguna Risuena | Puntuacio: 39.8243551911492
+Hem trobat un llibre de tapa dura tal i com volies.
+Aquest llibre et portara al mon emocionant dels esports, perfecte per als petits atletes com tu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Patinaje sobre el Lago de Miel | Puntuacio: 35.5166537699099
+Hem trobat un llibre de tapa dura tal i com volies.
+Aquest llibre et portara al mon emocionant dels esports, perfecte per als petits atletes com tu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Futbol en la Ciudad Regordeta | Puntuacio: 34.8401249533737
+Hem trobat un llibre de tapa dura tal i com volies.
+Aquest llibre et portara al mon emocionant dels esports, perfecte per als petits atletes com tu.
+
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+A quin grup d'edat pertanys? 
+    Si tens entre 4 i 6 anys tria l'opcio 'baby'
+    Si tens entre 7 i 14 anys tria l'opcio 'children'
+    Si tens entre 15 i 18 anys tria l'opcio 'teenager'
+    Si tens mes de 18 anys tria l'opcio 'adult'
+
+>>> 
+Perfecte! Anem a per la proxima pregunta:
+
+Tens habit de lectura? Es a dir, acostumes a llegir en els teus temps lliures, quan vas de viatge... de manera coninuada?
+    Respon 'Yes' o 'No'.
+
+>>> 
+Segur que el llibres que et recomanem t'enganxaran a la lectura!
+Eliminarem els llibres de la llista que no son de la teva edat.
+Abans de la poda hi ha 932 instancies de llibres.
+Despres de la poda han quedat 60 instancies de llibres.
+Ara anem amb preguntes una mica mes especifiques:
+
+Quin genere de llibre estas buscant? 
+    Si t'agradaria que el teu llibre fos d'aventures 'Adventure'
+    Si t'agradaria que el teu llibre fos  de magia i fantasia tria l'opcio 'Fantasy'
+    Si t'agradaria que el teu llibre fos sobre una historia d'amor tria l'opcio 'Romance'
+    Si t'agradaria que el teu llibre fos sobre un misteri a resoldre tria l'opcio 'Mystery'
+    Si t'agradaria que el teu llibre fos sobre un mon que ha canviat a una situacio nova i distopica tria l'opcio 'Dystopia'
+    Si t'agradaria que el teu llibre expliques fets del dia a dia amb temes socials tria l'opcio 'Social'
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Tindrem molt en compte el genere per triar els millors llibres per tu.
+
+Quin tipus de coberta prefereixes? 
+    Si prefereixes llibres amb tapa dura, selecciona 'hard'.
+    Si prefereixes llibres amb tapa blanda, selecciona 'soft'.
+    Si prefereixes l'edicio de butxaca, selecciona 'pocket'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Anem a buscar els llibres amb aquest tipus de coberta...
+
+... de mentres, t'agraden els llibres que actualment son tendencia o estan de moda?
+    Respon 'Yes' o 'No'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Ens encanta que segueixis les tendencies!
+
+Quant temps tens per llegir? 
+    Si disposes de poc temps i desitges llibres curts, selecciona 'short'.
+    Si tens un temps moderat per llegir i busques llibres de longitud mitjana, selecciona 'medium'.
+    Si tens prou de temps i vols llibres llargs, selecciona 'long'.
+    Si tens molt de temps i busques llibres molt llargs, selecciona 'very_long'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Perfecte!
+
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: El Ultimo Bosque bajo el Dome | Puntuacio: 38.6863169359515
+Hem trobat un llibre de butxaca perque el puguis portar a qualsevol lloc! Tal com volies.
+Aquest llibre et mostrara un futur sombri i pertorbador, veient realitats futures en un mon distopic, tal i com has demanat.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Desierto de Acero y Neon | Puntuacio: 28.1494236338848
+Aquest llibre et mostrara un futur sombri i pertorbador, veient realitats futures en un mon distopic, tal i com has demanat.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Rebelion en la Metropolis de Hielo | Puntuacio: 27.4396782797258
+Aquest llibre et mostrara un futur sombri i pertorbador, veient realitats futures en un mon distopic, tal i com has demanat.
+
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+A quin grup d'edat pertanys? 
+    Si tens entre 4 i 6 anys tria l'opcio 'baby'
+    Si tens entre 7 i 14 anys tria l'opcio 'children'
+    Si tens entre 15 i 18 anys tria l'opcio 'teenager'
+    Si tens mes de 18 anys tria l'opcio 'adult'
+
+>>> 
+Perfecte! Anem a per la proxima pregunta:
+
+Tens habit de lectura? Es a dir, acostumes a llegir en els teus temps lliures, quan vas de viatge... de manera coninuada?
+    Respon 'Yes' o 'No'.
+
+>>> 
+Segur que el llibres que et recomanem t'enganxaran a la lectura!
+Eliminarem els llibres de la llista que no son de la teva edat.
+Abans de la poda hi ha 932 instancies de llibres.
+Despres de la poda han quedat 782 instancies de llibres.
+Ara anem amb preguntes una mica mes especifiques:
+
+Quin temps tens per llegir? 
+    Si disposes de poc temps i desitges llibres curts, selecciona 'short'.
+    Si tens un temps moderat per llegir i busques llibres de longitud mitjana, selecciona 'medium'.
+    Si tens prou de temps i vols llibres llargs, selecciona 'long'.
+    Si tens molt de temps i busques llibres molt llargs, selecciona 'very_long'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Anem a buscar els llibres d'aquesta mida...
+
+... mentrestant, busques un llibre de algun autor considerat famos?
+    Respon 'Yes' o 'No'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Que be! Tenim molts llibres d'autors famosos.
+
+T'interessa llegir best sellers?
+    Respon 'Yes' si t'interessen, 'No' si no t'interessen.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Que curios! Vols descobrir la cara poc coneguda dels autors famosos...
+
+Quin tipus de coberta prefereixes? 
+    Si prefereixes llibres amb tapa dura, selecciona 'hard'.
+    Si prefereixes llibres amb tapa blanda, selecciona 'soft'.
+    Si prefereixes l'edicio de butxaca, selecciona 'pocket'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Prenem nota! Buscarem llibres amb aquest tipus de coberta.
+
+T'agraden les novelles actuals? O prefereixes les classiques?
+    Respon 'Yes' si prefereixes les actuals, 'No' si prefereixes les classiques.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> Llegir un classic sempre es una bona experiencia. 
+
+Quin genere de llibre estas buscant? 
+    Si t'agradaria llegir una obra contemporania, selecciona 'Contemporary'.
+    Si t'interessen les noveles ambientades en fets historics, selecciona 'Historical'.
+    Si vols resoldre un misteri mentre llegeixes, selecciona 'Mystery'.
+    Si t'agrada la magia i les terres fantastiques, selecciona 'Fantasy'.
+    Si busques una historia d'amor, selecciona 'Romance'.
+    Si t'agrada explorar futurs i tecnologies imaginaries, selecciona 'Science_Fiction'.
+    Si t'agrada passar por mentre llegeixes, selecciona 'Horror'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Tindrem molt en compte el genere que has triat
+
+    Quin subgenere t'agradaria? Pel genere escollit (Historical) tens les opcions que es mostren a continuacio:
+
+  Fiction_History
+  Realistic
+
+>>> 
+Amb la informacio del subgenere que ens has dit podrem afinar molt millor en el resutats.
+
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Que be! Aquest llibre es exactament el que estaves buscant:
+Title: El ultimo testamento | Puntuacio: 47.221269570312
+Hem trobat un llibre amb tapa fina tal i com volies.
+Amb aquest llibre seras transportat a epoques passades, perfecte per a aquells que volen reviure la historia.
+Com havies demanat, el llibre es del subgenere Fiction_History
+
+--------------- LLIBRE ---------------
+Que be! Aquest llibre es exactament el que estaves buscant:
+Title: La esperanza en ruinas | Puntuacio: 45.7166790807865
+Hem trobat un llibre amb tapa fina tal i com volies.
+Amb aquest llibre seras transportat a epoques passades, perfecte per a aquells que volen reviure la historia.
+Com havies demanat, el llibre es del subgenere Fiction_History
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: El rastro de la traicion | Puntuacio: 44.5787344830891
+Hem trobat un llibre amb tapa fina tal i com volies.
+Amb aquest llibre seras transportat a epoques passades, perfecte per a aquells que volen reviure la historia.
+Com havies demanat, el llibre es del subgenere Fiction_History
+
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+A quin grup d'edat pertanys? 
+    Si tens entre 4 i 6 anys tria l'opcio 'baby'
+    Si tens entre 7 i 14 anys tria l'opcio 'children'
+    Si tens entre 15 i 18 anys tria l'opcio 'teenager'
+    Si tens mes de 18 anys tria l'opcio 'adult'
+
+>>> 
+Perfecte! Anem a per la proxima pregunta:
+
+Tens habit de lectura? Es a dir, acostumes a llegir en els teus temps lliures, quan vas de viatge... de manera coninuada?
+    Respon 'Yes' o 'No'.
+
+>>> 
+Segur que el llibres que et recomanem t'enganxaran a la lectura!
+Eliminarem els llibres de la llista que no son de la teva edat.
+Abans de la poda hi ha 932 instancies de llibres.
+Despres de la poda han quedat 782 instancies de llibres.
+Ara anem amb preguntes una mica mes especifiques:
+
+Quin temps tens per llegir? 
+    Si disposes de poc temps i desitges llibres curts, selecciona 'short'.
+    Si tens un temps moderat per llegir i busques llibres de longitud mitjana, selecciona 'medium'.
+    Si tens prou de temps i vols llibres llargs, selecciona 'long'.
+    Si tens molt de temps i busques llibres molt llargs, selecciona 'very_long'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Anem a buscar els llibres d'aquesta mida...
+
+... mentrestant, busques un llibre de algun autor considerat famos?
+    Respon 'Yes' o 'No'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> Bona eleccio, que els autors siguin desconeguts no treu que les seves obres siguin bones. 
+
+Quin tipus de coberta prefereixes? 
+    Si prefereixes llibres amb tapa dura, selecciona 'hard'.
+    Si prefereixes llibres amb tapa blanda, selecciona 'soft'.
+    Si prefereixes l'edicio de butxaca, selecciona 'pocket'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Quin tipus de coberta prefereixes? 
+    Si prefereixes llibres amb tapa dura, selecciona 'hard'.
+    Si prefereixes llibres amb tapa blanda, selecciona 'soft'.
+    Si prefereixes l'edicio de butxaca, selecciona 'pocket'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Prenem nota! Buscarem llibres amb aquest tipus de coberta.
+
+T'agraden les novelles actuals? O prefereixes les classiques?
+    Respon 'Yes' si prefereixes les actuals, 'No' si prefereixes les classiques.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+D'acord, anem a veure quins son els ultims llibres que ens han arribat.
+
+Quin genere de llibre estas buscant? 
+    Si t'agradaria llegir una obra contemporania, selecciona 'Contemporary'.
+    Si t'interessen les noveles ambientades en fets historics, selecciona 'Historical'.
+    Si vols resoldre un misteri mentre llegeixes, selecciona 'Mystery'.
+    Si t'agrada la magia i les terres fantastiques, selecciona 'Fantasy'.
+    Si busques una historia d'amor, selecciona 'Romance'.
+    Si t'agrada explorar futurs i tecnologies imaginaries, selecciona 'Science_Fiction'.
+    Si t'agrada passar por mentre llegeixes, selecciona 'Horror'.
+Si vols saltar-te aquesta pregunta, escriu '-'.
+
+>>> 
+Tindrem molt en compte el genere que has triat
+
+Quins trigger warnings t'agradaria evitar? 
+    Escriu '1' per evitar continguts amb abusos.
+    Escriu '2' per evitar l'assetjament sexual.
+    Escriu '3' per evitar continguts amb cosos nuus.
+    Escriu '4' per evitar l'homofobia o la transfobia.
+    Escriu '5' per evitar malalties mentals o discriminacio contra persones amb discapacitats.
+    Escriu '6' per evitar el contingut pornografic.
+    Escriu '7' per evitar l'autolesio o el suicidi.
+    Escriu '8' per evitar trastorns alimentaris o fobia a la obesitat.
+    Escriu '9' per evitar el racisme i les ofenses racials.
+    Escriu '10' per evitar la violencia.
+    Escriu '11' per evitar la sang i la violencia grafica.
+    Escriu '12' per evitar el segrest i l'abduccio.
+    Escriu '13' per evitar l'assassinat.
+    Escriu '14' per evitar l'abus infantil, la pedofilia i l'incest.
+    Escriu '15' per evitar la crueltat cap als animals.
+    Escriu '16' per evitar la tortura.
+
+Escriu tots els trigger warnings que vols evitar, separats per un espai. Si no vols evitar-ne cap, escriu '-'.
+
+>>> 
+Gracies per avisarnos! Evitarem els llibres que continguin aquests temes delicats.
+
+De fet, acabem de fer una poda per eliminar de la llista aquells llibres que contenen els Trigger Warnings que has demanat evitar.
+
+    Quin subgenere t'agradaria? Pel genere escollit (Mystery) tens les opcions que es mostren a continuacio:
+
+  Paranormal_Mystery
+  Police
+  Thriller_Mystery
+
+>>> 
+Amb la informacio del subgenere que ens has dit podrem afinar molt millor en el resutats.
+
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Que be! Aquest llibre es exactament el que estaves buscant:
+Title: El juego del destino incierto | Puntuacio: 46.4183424657212
+Hem trobat un llibre amb tapa fina tal i com volies.
+Amb aquest llibre estaras intrigat fins al final ja que ens has demanat un llibre de misteri
+Com havies demanat, el llibre es del subgenere Thriller_Mystery
+
+--------------- LLIBRE ---------------
+Que be! Aquest llibre es exactament el que estaves buscant:
+Title: La trampa del laberinto mortal | Puntuacio: 46.0246154844515
+Hem trobat un llibre amb tapa fina tal i com volies.
+Amb aquest llibre estaras intrigat fins al final ja que ens has demanat un llibre de misteri
+Com havies demanat, el llibre es del subgenere Thriller_Mystery
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: El secreto bajo la luna de sangre | Puntuacio: 41.214126670518
+Hem trobat un llibre amb tapa fina tal i com volies.
+Amb aquest llibre estaras intrigat fins al final ja que ens has demanat un llibre de misteri
+Com havies demanat, el llibre es del subgenere Thriller_Mystery
+
+CLIPS> 

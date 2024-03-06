@@ -1,0 +1,50 @@
+         CLIPS (6.4.1 4/8/23)
+CLIPS> +#######@!!!!***+**+!!!!!!!*+**********+!!**+**+***+****+*****+********!*+**+!***
+TRUE
+CLIPS> @@
+TRUE
+CLIPS> @
+TRUE
+CLIPS> CLIPS> 
+--------------------------------------------------
+  _________   _________
+ /          |/         |    Recomanador de Llibres
+||          |          ||   
+||          |          ||   Practica 1 - SBC
+||          |          ||
+||          |          ||   By:
+|| ________ | ________ ||     Artur A A
+||/         |/        |||     Llum F P
+                             Paula G S
+                             Oscar M S
+
+--------------------------------------------------
+                   BENVINGUT!
+
+Li farem diverses preguntes i el nostre sistema
+recomanador li oferira els llibres que mes s'adap-
+ten a les seves preferencies.
+
+--------------------------------------------------
+    
+Gracies per haver respost les preguntes!
+
+Els llibres seleccionats son els seguents:
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: Cancion de la Risa | Puntuacio: 29.9767724954876
+Hem trobat un llibre de tapa dura tal i com volies.
+Amb aquesta historia, els sons i melodies cobren vida, ideal per als petits musics amb un cor ple de ritme com tu.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: La promesa de la redencion | Puntuacio: 29.6896168228382
+Hem trobat un llibre de tapa dura tal i com volies.
+
+--------------- LLIBRE ---------------
+Aquest llibre pot ser una bona opcio:
+Title: El Eco de la Oscuridad | Puntuacio: 29.6509307363151
+Hem trobat un llibre de tapa dura tal i com volies.
+
+CLIPS> 

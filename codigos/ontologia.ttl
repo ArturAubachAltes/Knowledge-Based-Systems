@@ -1,0 +1,486 @@
+@prefix : <http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/> .
+
+<http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont> rdf:type owl:Ontology ;
+                                                                  rdfs:comment "Ontologia de la primera pràctica de Sistemes Basats en el Coneixement" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/author_of
+:author_of rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Autor ;
+           rdfs:range :Libro .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/fav_author
+:fav_author rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Lector ;
+            rdfs:range :Autor .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/has_subgenre
+:has_subgenre rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Lector ,
+                          :Libro ;
+              rdfs:range :Subgenero .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/main_genre
+:main_genre rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Autor ,
+                        :Lector ,
+                        :Libro ;
+            rdfs:range :Genero .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/subgenre_of
+:subgenre_of rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Subgenero ;
+             rdfs:range :Genero .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/actual
+:actual rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Autor ,
+                    :Lector ,
+                    :Libro ;
+        rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/bestseller
+:bestseller rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Lector ,
+                        :Libro ;
+            rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/cover
+:cover rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:domain :Lector ,
+                   :Libro ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/difficulty
+:difficulty rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Libro ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/famous
+:famous rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Autor ,
+                    :Lector ;
+        rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/goal
+:goal rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:domain :Lector ,
+                  :Libro ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/hab_lectura
+:hab_lectura rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Lector ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/illustrated
+:illustrated rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Lector ,
+                         :Libro ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/language
+:language rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :Lector ,
+                      :Libro ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/length
+:length rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Libro ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/name_author
+:name_author rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Autor ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/name_genre
+:name_genre rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Genero ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/public
+:public rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Autor ,
+                    :Lector ,
+                    :Libro ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/punctuation
+:punctuation rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Libro ;
+             rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/rating
+:rating rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Libro ;
+        rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/saga
+:saga rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdf:type owl:FunctionalProperty ;
+      rdfs:domain :Lector ,
+                  :Libro ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/theme
+:theme rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:domain :Lector ,
+                   :Libro ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/time_read
+:time_read rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Lector ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdf:type owl:FunctionalProperty ;
+       rdfs:domain :Libro ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/triggerw
+:triggerw rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Lector ,
+                      :Libro ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Autor
+:Autor rdf:type owl:Class ;
+       rdfs:subClassOf :Persona .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Ficcion
+:Ficcion rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Genero
+:Genero rdf:type owl:Class ;
+        rdfs:subClassOf :Ficcion .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Lector
+:Lector rdf:type owl:Class ;
+        rdfs:subClassOf :Persona .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Libro
+:Libro rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Persona
+:Persona rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Subgenero
+:Subgenero rdf:type owl:Class ;
+           rdfs:subClassOf :Genero .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Adventure
+:Adventure rdf:type owl:NamedIndividual ,
+                    :Genero ;
+           :name_genre "Adventure" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Classic_Romance
+:Classic_Romance rdf:type owl:NamedIndividual ,
+                          :Subgenero ;
+                 :subgenre_of :Romance ;
+                 :name_genre "Classic_Romance" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Contemporary
+:Contemporary rdf:type owl:NamedIndividual ,
+                       :Genero ;
+              :name_genre "Contemporary" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Cyberpunk
+:Cyberpunk rdf:type owl:NamedIndividual ,
+                    :Subgenero ;
+           :subgenre_of :Science_Fiction ;
+           :name_genre "Cyberpunk" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Dark_Fantasy
+:Dark_Fantasy rdf:type owl:NamedIndividual ,
+                       :Subgenero ;
+              :subgenre_of :Fantasy ;
+              :name_genre "Dark_Fantasy" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Dystopia
+:Dystopia rdf:type owl:NamedIndividual ,
+                   :Genero ;
+          :name_genre "Dystopia" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Erotic
+:Erotic rdf:type owl:NamedIndividual ,
+                 :Subgenero ;
+        :subgenre_of :Romance ;
+        :name_genre "Erotic" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Fantasy
+:Fantasy rdf:type owl:NamedIndividual ,
+                  :Genero ;
+         :name_genre "Fantasy" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Fiction_History
+:Fiction_History rdf:type owl:NamedIndividual ,
+                          :Subgenero ;
+                 :subgenre_of :Historical ;
+                 :name_genre "Fiction_History" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/High_Fantasy
+:High_Fantasy rdf:type owl:NamedIndividual ,
+                       :Subgenero ;
+              :subgenre_of :Fantasy ;
+              :name_genre "High_Fantasy" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Historical
+:Historical rdf:type owl:NamedIndividual ,
+                     :Genero ;
+            :name_genre "Historical" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Historical_Romance
+:Historical_Romance rdf:type owl:NamedIndividual ,
+                             :Subgenero ;
+                    :subgenre_of :Romance ;
+                    :name_genre "Historical_Romance" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Historical_Romance_Contemporary
+:Historical_Romance_Contemporary rdf:type owl:NamedIndividual ,
+                                          :Subgenero ;
+                                 :subgenre_of :Contemporary ;
+                                 :name_genre "Historical_Romance_Contemporary" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Horror
+:Horror rdf:type owl:NamedIndividual ,
+                 :Genero ;
+        :name_genre "Horror" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Mystery
+:Mystery rdf:type owl:NamedIndividual ,
+                  :Genero ;
+         :name_genre "Mystery" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Paranormal_Horror
+:Paranormal_Horror rdf:type owl:NamedIndividual ,
+                            :Subgenero ;
+                   :subgenre_of :Horror ;
+                   :name_genre "Paranormal_Horror" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Paranormal_Mystery
+:Paranormal_Mystery rdf:type owl:NamedIndividual ,
+                             :Subgenero ;
+                    :subgenre_of :Mystery ;
+                    :name_genre "Paranormal_Mystery" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Police
+:Police rdf:type owl:NamedIndividual ,
+                 :Subgenero ;
+        :subgenre_of :Mystery ;
+        :name_genre "Police" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Postapocalyptic_Dystopia
+:Postapocalyptic_Dystopia rdf:type owl:NamedIndividual ,
+                                   :Subgenero ;
+                          :subgenre_of :Science_Fiction ;
+                          :name_genre "Postapocalyptic_Dystopia" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Psychological_Horror
+:Psychological_Horror rdf:type owl:NamedIndividual ,
+                               :Subgenero ;
+                      :subgenre_of :Horror ;
+                      :name_genre "Psychological_Horror" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Real_Dystopia
+:Real_Dystopia rdf:type owl:NamedIndividual ,
+                        :Subgenero ;
+               :subgenre_of :Contemporary ;
+               :name_genre "Real_Dystopia" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Realistic
+:Realistic rdf:type owl:NamedIndividual ,
+                    :Subgenero ;
+           :subgenre_of :Historical ;
+           :name_genre "Realistic" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Realistic_Fiction
+:Realistic_Fiction rdf:type owl:NamedIndividual ,
+                            :Subgenero ;
+                   :subgenre_of :Contemporary ;
+                   :name_genre "Realistic_Fiction" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Romance
+:Romance rdf:type owl:NamedIndividual ,
+                  :Genero ;
+         :name_genre "Romance" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Science_Fiction
+:Science_Fiction rdf:type owl:NamedIndividual ,
+                          :Genero ;
+                 :name_genre "Science_Fiction" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Social
+:Social rdf:type owl:NamedIndividual ,
+                 :Genero ;
+        :name_genre "Social" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Space_Opera
+:Space_Opera rdf:type owl:NamedIndividual ,
+                      :Subgenero ;
+             :subgenre_of :Science_Fiction ;
+             :name_genre "Space_Opera" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Technological
+:Technological rdf:type owl:NamedIndividual ,
+                        :Subgenero ;
+               :subgenre_of :Science_Fiction ;
+               :name_genre "Technological" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Thriller_Horror
+:Thriller_Horror rdf:type owl:NamedIndividual ,
+                          :Subgenero ;
+                 :subgenre_of :Horror ;
+                 :name_genre "Thiller_Horror" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Thriller_Mystery
+:Thriller_Mystery rdf:type owl:NamedIndividual ,
+                           :Subgenero ;
+                  :subgenre_of :Mystery ;
+                  :name_genre "Thriller_Mystery" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/Urban_Fantasy
+:Urban_Fantasy rdf:type owl:NamedIndividual ,
+                        :Subgenero ;
+               :subgenre_of :Fantasy ;
+               :name_genre "Urban_Fantasy" .
+
+
+###  http://www.semanticweb.org/oscar/ontologies/2023/9/defbooksont/lector
+:lector rdf:type owl:NamedIndividual ,
+                 :Lector ;
+        :triggerw "" .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi

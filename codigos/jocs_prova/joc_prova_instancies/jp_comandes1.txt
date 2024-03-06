@@ -1,0 +1,6 @@
+(load instancies/main_sin_instancia.clp)
+(load ../instances.clp)
+(load instancies/joc_prova.clp)
+(reset)
+(run)
+(exit)
